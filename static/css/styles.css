@@ -746,6 +746,7 @@ nav ul li {
 	margin-top: 100px;
 	color: var(--black);
 	font-size: 1.8rem;
+	text-align: right;
 }
 
 .app-menu .cont li {
@@ -767,48 +768,8 @@ nav ul li {
 .app-menu .nav_btn button {
 	font-size: 1.2rem;
 }
-
 /* end of menu */
-/* mob menu */
-@media screen and (max-width: 1000px) {
-	.nav {
-		display: none;
-	}
-	.menu-icon {
-		display: block;
-	}
-}
 
-@media screen and (max-width: 520px) {
-	.menu-icon {
-		top: unset;
-		left: unset;
-		right: 15px;
-		bottom: 20px;
-	}
-	.app-menu {
-		position: absolute;
-		top: unset;
-		left: unset;
-		bottom: 0;
-		right: 0;
-		-webkit-transform: translateX(103%);
-		transform: translateX(103%);
-	}
-	.app-menu .cont {
-		margin-top: 30px;
-	}
-	.app-menu .nav_btn {
-		right: unset;
-		left: 40px;
-	}
-}
-
-@media (pointer: coarse) {
-	/* styles for device with touch */
-}
-
-/* *********** */
 .popup {
 	position: fixed;
 	width: 100%;
@@ -1000,3 +961,59 @@ nav ul li {
 .mail path {
 	color: var(--black);
 }
+
+/* mob menu */
+@media screen and (max-width: 1000px) {
+	.nav {
+		display: none;
+	}
+	.menu-icon {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.menu-icon {
+		top: unset;
+		left: unset;
+		right: 15px;
+		bottom: 20px;
+	}
+	.app-menu {
+		position: absolute;
+		top: unset;
+		left: unset;
+		bottom: 0;
+		right: 0;
+		-webkit-transform: translateX(103%);
+		transform: translateX(103%);
+		width: 200px;
+	}
+	.app-menu .cont {
+		margin-top: 30px;
+		font-size: 1.4rem;
+	}
+	.app-menu .nav_btn {
+		right: unset;
+		left: 40px;
+	}
+	.app-menu .nav_a {
+		padding: 10px;
+	}
+	.mail {
+		bottom: unset;
+		top: 24px;
+		right: 12px;
+	}
+	.projects_item {
+		width: 75%;
+		margin: auto;
+		margin-bottom: 80px;
+	}
+}
+
+@media (pointer: coarse) {
+	/* styles for device with touch */
+}
+
+/* *********** */
